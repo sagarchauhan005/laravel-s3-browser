@@ -29,4 +29,23 @@ class Helper
 
         return (string) $request->getUri();
     }
+
+    /*
+    * Comment by Sagar at 25/9/18 11:26 AM
+    * This is used to maintain uniformity in returing the response
+     * by using a single line method and not re-write response syntax
+     * every time
+    *
+     * @param $statusCode | int
+     * @param $statusText | string
+     * @param null $data | array or null
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public static function returnResponse($statusCode, $statusText, $data=null){
+
+        return response()->json([
+            'response' => $statusText,
+            'payload' => $data,
+        ], $statusCode);
+    }
 }

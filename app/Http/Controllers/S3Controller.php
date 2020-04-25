@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Utilities\Helper;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
@@ -25,5 +26,25 @@ class S3Controller extends Controller
         }
 
         return view('pages/index')->with('files',$res);
+    }
+
+    public static function deleteImg(Request $request){
+        $key = $request->get('key');
+        $del = Storage::disk('s3')->delete($key);
+        if($del){
+            return Helper::returnResponse(200,"deleted");
+        }
+
+        return Helper::returnResponse(400, 'unable to delete');
+    }
+
+    public static function downloadImg(Request $request){
+        $key = $request->get('key');
+        $down = Helper::getPreSignedUrl($key, true);
+        if($down){
+            return Helper::returnResponse(200,"downloaded", $down);
+        }
+
+        return Helper::returnResponse(400, 'unable to download');
     }
 }

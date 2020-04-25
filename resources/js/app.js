@@ -1,8 +1,6 @@
-require('./bootstrap');
-
 function deleteImg(key, index) {
-
-    $("#"+index).hide();
+    //console.log(index);
+    $("#"+index).fadeOut();
     $.ajax({
         type: 'GET',
         url: '/delete-s3-img',
