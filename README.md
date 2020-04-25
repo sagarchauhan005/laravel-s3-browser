@@ -4,6 +4,13 @@ Laravel S3 browser helps you browse your S3 bucket and view the files in it, dir
 
 This project shall come handy to anyone who wants to clean their S3 bucket by going through majority of the files and not randomly clean or move the files.
 
+Image Preview
+![Imgur](https://i.imgur.com/17dYBVw.jpg)
+
+CSS/JSS etc 
+![Imgur](https://i.imgur.com/HvFRpeH.png)
+
+
 # Getting Started !
 
   - Edit your environment file with the following variables and assign their values
