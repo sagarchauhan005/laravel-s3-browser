@@ -1,0 +1,42 @@
+.nav-bg-dark{
+    background-color: black !important;
+}
+.navbar-brand {
+    color: white !important;
+}
+
+.s3-card-column{
+    margin-bottom: 30px;
+}
+
+#about-project{
+    margin-top: 30px;
+}
+
+.preview-container{
+    margin-top: 20px;
+}
+
+.preview-container-paginate {
+    margin-top: 30px;
+}
+
+.card{
+    min-height: 300px;
+    background-color: black;
+    color: white;
+    #card-image{
+        width:100%; height: 250px; object-fit: cover !important;
+    }
+
+    .card-btn-container{
+        margin: 10px;
+        width: 100%; overflow: hidden;
+        text-align: center;
+    }
+
+    #left-btn {
+        width: 50%;
+        float: left;
+    }
+}
