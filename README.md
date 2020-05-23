@@ -25,11 +25,6 @@ This project shall come handy to anyone who wants to clean their S3 bucket by go
 # NOTE
 If you want only images, set ```ONLY_IMAGE_RESULT=true``` and ```IMAGE_PAGINATION_COUNT={large number}```, so that it can skip non-image files for pagination
 
-You can also:
-  - Import and save files from GitHub, Dropbox, Google Drive and One Drive
-  - Drag and drop markdown and HTML files into Dillinger
-  - Export documents as Markdown, HTML and PDF
-
 # Author
 
  [Sagar Chauhan](https://twitter.com/chauhansahab005) works as a Technical Lead at [Veu](https://www.theveu.com) and [Animal Advertising Pvt Ltd](https://www.weareanimal.co).
